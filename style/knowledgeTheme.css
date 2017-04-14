@@ -1,0 +1,106 @@
+/* Services' Theme */
+
+.mainBackground
+{
+    background: #ff8a00; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ff8a00, #ffa800); /* Safari */
+    background: -o-linear-gradient(#ff8a00, #ffa800); /* Opera */
+    background: -moz-linear-gradient(#ff8a00, #ffa800); /* Firefox */
+    background: linear-gradient(#ff8a00, #ffa800); /* Standard */
+}
+
+.planetLabel
+{
+    width: 160px;
+    height: 140px;
+    left: -55px;
+    background: url('../img/knowledgeLabel.png') 100% 100% no-repeat;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+
+.planetLabel > .layer
+{
+    background: url('../img/knowledgeInnerLayer.png') 100% 100% no-repeat;
+    border-radius: 0;
+}
+
+.planetLabel > .layer > .layer
+{
+    height: 90% !important;
+    left: 15px !important;
+    background: url('../img/knowledgeInnerLayer2.png') 100% 100% no-repeat;
+    border-radius: 0;
+}
+
+.planetInnerLabel,
+.nextBtn,
+.prevBtn
+{
+    background-color: #e41519;
+}
+
+
+
+.planetLabel > .labelFrame
+{
+    top: -10% !important;
+    left: -5% !important;
+    height: 118%!important;
+    width: 110% !important;
+    -webkit-border-radius: 35px !important;
+    -moz-border-radius: 35px !important;
+    border-radius: 35px !important;
+}
+
+.planetLabel > .layer
+{
+    top: 5px;
+    left: 5px;
+    height: 85%;
+}
+
+.pageBtn > .btnLayer,
+.planetInnerLabel > .layer
+{
+    background-color: #e73c18;
+}
+
+.planetLabel > .layer > .layer
+{
+    height: 75%;
+}
+
+.planetInnerLabel > .layer > .layer,
+.pageBtn > .btnLayer > .btnLayer
+{
+    background-color: #e9511c;
+}
+
+.planetLabel .labelText
+{
+    top: 10px;
+    left: 15%;
+}
+
+.planetLabel > .layer > .layer > .layer
+{
+    display: none;
+}
+
+.planetInnerLabel:nth-child(3)
+{
+    display: none;
+}
+
+.socials > ul > li a:hover
+{
+    color: #e41519;
+}

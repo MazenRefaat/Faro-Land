@@ -1,0 +1,101 @@
+/* Stories' Theme */
+
+.mainBackground
+{
+    background: #faa319; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#faa319, #fad657); /* Safari */
+    background: -o-linear-gradient(#faa319, #fad657); /* Opera */
+    background: -moz-linear-gradient(#faa319, #fad657); /* Firefox */
+    background: linear-gradient(#faa319, #fad657); /* Standard */
+}
+
+
+.pageLabel,
+.nextBtn,
+.prevBtn
+{
+    background-color: #ff7e00;
+}
+
+.planetLabel,
+.planetLabel > .labelFrame,
+.planetLabel > .layer,
+.planetLabel > .layer > .layer
+{
+    -webkit-border-radius: 50% 100% 60% 40% !important;
+    -moz-border-radius: 50% 100% 60% 40% !important;
+    border-radius: 50% 100% 60% 40% !important;
+
+}
+
+.planetLabel
+{
+    width: 145px;
+    height: 145px;
+    top: -35px;
+    left: -60px;
+    -webkit-transform: rotate(184deg);
+    -moz-transform: rotate(184deg);
+    -ms-transform: rotate(184deg);
+    -o-transform: rotate(184deg);
+    transform: rotate(184deg);
+}
+
+.planetLabel > .layer
+{
+    top: 5px;
+    left: 5px;
+    height: 85%;
+    background-color: #ffa800;
+}
+
+.pageBtn > .btnLayer,
+.planetInnerLabel > .layer
+{
+    background-color: #ffa800;
+}
+
+.planetLabel > .layer > .layer
+{
+    top: 15px;
+    height: 75%;
+    background-color: #ffc000;
+}
+
+.planetInnerLabel > .layer > .layer,
+.pageBtn > .btnLayer > .btnLayer
+{
+    background-color: #ffc000;
+}
+
+.planetLabel .labelText
+{
+    top: 20px;
+    left: 6%;
+    -webkit-transform: rotate(184deg);
+    -moz-transform: rotate(184deg);
+    -ms-transform: rotate(184deg);
+    -o-transform: rotate(184deg);
+    transform: rotate(184deg);
+}
+
+.planetLabel > .layer > .layer > .layer
+{
+    display: none;
+}
+
+.backPageBtn > .btnLayer
+{
+    background-color: #3ab1ff !important;
+}
+
+.backPageBtn > .btnLayer > .btnLayer
+{
+    background-color: #5ec0ff !important;
+}
+
+.socials > ul > li a:hover
+{
+    color: #ff7e00;
+}
+

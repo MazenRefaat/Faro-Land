@@ -1,0 +1,50 @@
+/* Khabareuter's Theme */
+
+.mainBackground
+{
+    background: #528bd2; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#528bd2, #57e5ff); /* Safari */
+    background: -o-linear-gradient(#528bd2, #57e5ff); /* Opera */
+    background: -moz-linear-gradient(#528bd2, #57e5ff); /* Firefox */
+    background: linear-gradient(#528bd2, #57e5ff); /* Standard */
+}
+
+.pageLabel
+{
+    background-color: #0099fb;
+}
+
+.pageBtn > .btnLayer,
+.planetLabel > .layer,
+.planetInnerLabel > .layer
+{
+    background-color: #3ab1ff;
+}
+
+.pageBtn > .btnLayer > .btnLayer
+{
+    background-color: #5ec0ff;
+}
+
+.planetLabel > .layer > .layer,
+.planetInnerLabel > .layer > .layer
+{
+    background-color: #5ec0ff;
+}
+
+.nextBtn,
+.prevBtn
+{
+    background-color: #0099fb;
+}
+
+.planetInnerLabel:nth-child(3)
+{
+    display: none;
+}
+
+
+.socials > ul > li a:hover
+{
+    color: #0099fb;
+}

@@ -1,0 +1,1257 @@
+@font-face {
+    font-family: "Lalezar-Regular";
+    src: url("../fonts/Lalezar-Regular.ttf");
+}
+
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.islandsIframe
+{
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.mainContainer, .mainBackground, .menu
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 350;
+    top: 0;
+    left: 0;
+}
+
+.menu
+{
+    background-color: #1b6d85;
+    z-index: 510;
+    display: none;
+}
+
+.menu .menuItem
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 20%;
+    text-align: center;
+}
+
+.searchInputContainer input
+{
+    font-family: "Lalezar-Regular", Tahoma;
+    position: relative;
+    margin-top: 10%;
+    direction: rtl;
+    color: #fff;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.searchInputContainer > form > input:first-child
+{
+    font-size: 60px;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.searchInputContainer input::-webkit-input-placeholder
+{
+    color: rgba(204, 204, 204, 0.7);
+}
+
+
+.menuMainLink
+{
+    font-family: "Lalezar-Regular", Tahoma;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0 4px  #888;
+    text-decoration: none;
+    display: block;
+    margin:0 auto;
+    padding: 25px 0 5px 0;
+    clear: both;
+}
+
+.menuMainLink:hover,
+.menuMainLink:focus
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menuInner
+{
+    position: relative;
+    display: none;
+    width: 100%;
+    padding: 10px 25px;
+}
+
+.menuInner ul
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    direction: rtl;
+}
+
+.menuInner ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menuInner ul li a
+{
+    font-family: "Lalezar-Regular", Tahoma;
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 0 4px  #888;
+    text-decoration: none;
+    display: block;
+    margin:0 auto;
+}
+
+.menu .menuServices,
+.menuServicesInner,
+.menuServicesInner a
+{
+    background-color: #f56ee3;
+}
+
+
+
+.menu .menuStories,
+.menuStoriesInner,
+.menuStoriesInner a
+{
+    background-color: #fad657;
+}
+
+
+.menu .menuKhabar,
+.menuKhabarInner,
+.menuKhabarInner a
+{
+    background-color: #57e5ff;
+}
+
+.menu .menuPreschool,
+.menuPreschoolInner,
+.menuPreschoolInner a
+{
+    background-color: #87ff60;
+}
+
+.menu .menuKnowledge,
+.menuKnowledgeInner,
+.menuKnowledgeInner a
+{
+    background-color: #ffa800;
+}
+
+.mainContainer
+{
+    z-index: 300;
+}
+
+.mainBackground
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 200;
+    background: url('../img/background.jpg') no-repeat 100% 0;
+    background-size: cover;
+}
+
+.loadingGIF
+{
+    display: block;
+    position: relative;
+    margin: 10px auto;
+}
+
+.socials, .menuBtn, .mute, .searchBtn
+{
+    position: absolute;
+    z-index: 350;
+}
+
+.menuBtn
+{
+    right: 25px;
+    top: 25px;
+    z-index: 550;
+}
+
+.menuBtn, .searchBtn
+{
+    -webkit-transition: transform 0.3s linear;
+    -moz-transition: transform 0.3s linear;
+    -ms-transition: transform 0.3s linear;
+    -o-transition: transform 0.3s linear;
+    transition: transform 0.3s linear;
+}
+
+.searchBtn:hover,
+.menuBtn:hover
+{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.searchBtn
+{
+    right: 75px;
+    top: 25px;
+    z-index: 501;
+}
+
+
+
+.searchBtn a
+{
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.searchInputContainer
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    background-color: rgba(83, 197, 254, 0.9);
+}
+
+.searchSubmit
+{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px 25px;
+    clear: both;
+    font-size: 36px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -ms-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.searchSubmit:hover
+{
+    background-color: #fff;
+    color: #53c5fe;
+}
+
+.menuBtn img
+{
+    width: 32px;
+}
+
+.mute
+{
+    right: 25px;
+    bottom: 25px;
+}
+
+
+.socials
+{
+    left: 25px;
+    bottom: 25px;
+}
+
+.socials > ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+.socials > ul > li
+{
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.socials > ul > li a, .mute a
+{
+    font-size: 28px;
+    color: #fff;
+}
+
+.socials > ul > li a
+{
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    -ms-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+.socials > ul > li a:hover
+{
+    color: #534ab2;
+}
+
+/************************************************************* Video Page ************************************************************/
+
+.innerLogo
+{
+    margin: 30px;
+}
+
+.innerLogo
+{
+    width: 100px;
+}
+
+.pageContent
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.labelMenu
+{
+    position: absolute;
+    margin: 0 auto;
+    z-index: 300;
+    width: 60%;
+    height: 80%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 100px 100px 100px 100px;
+    -webkit-border-radius: 100px 100px 100px 100px;
+    -moz-border-radius: 100px 100px 100px 100px;
+}
+
+.pageContainer
+{
+    margin: 0 auto;
+    position: relative;
+    z-index: 400;
+    width: 50%;
+    height: 65%;
+    background-color: #969696;
+    border-radius: 100px 100px 150px 190px;
+    -webkit-box-shadow:  0 0 4px 0 #000;
+    -moz-box-shadow:  0 0 4px 0 #000;
+    box-shadow:  0 0 4px 0 #000;
+}
+
+.pageContainerLayer, .contentContainerLayer
+{
+    position: relative;
+    border-radius: 100px 100px 150px 190px;
+    -webkit-border-radius: 100px 100px 150px 190px;
+    -moz-border-radius: 100px 100px 150px 190px;
+    margin: 0 auto;
+}
+
+.pageContainer > .pageContainerLayer
+{
+    z-index: 450;
+    width: 100%;
+    height: 95%;
+    background-color: #b9b8b8;
+}
+
+.pageContainer > .pageContainerLayer > .pageContainerLayer
+{
+    z-index: 500;
+    width: 98%;
+    height: 92%;
+    top: 10px;
+    background-color: #cccccc;
+}
+
+.contentContainerLayer
+{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    top: 15px;
+    z-index: 550;
+    overflow: hidden;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+.pageBtn, .btnLayer, .pageLabel, .layer
+{
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.pageBtn
+{
+    position: absolute;
+    z-index: 550;
+    width: 70px;
+    height: 70px;
+}
+
+.pageLabel
+{
+    position: absolute;
+}
+
+.planetLabel
+{
+    width: 120px;
+    height: 120px;
+    top: -30px;
+    left: -30px;
+}
+
+.planetInnerLabel
+{
+    width: 120px;
+    height: 60px;
+    top: -30px;
+    left: 120px;
+}
+
+
+.planetInnerLabel:first-child
+{
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.planetInnerLabel:nth-child(2)
+{
+    left: 270px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.planetInnerLabel:nth-child(3)
+{
+    left: 400px;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.closePageBtn
+{
+    top: 35px;
+    right: -15px;
+    background-color: #fb002c;
+}
+
+.pageBtn .btnLayer,
+.pageLabel .layer
+{
+    position: relative;
+    width: 85%;
+    height: 85%;
+}
+
+.pageBtn .btnLayer
+{
+    top: 2px;
+    left: 2px;
+}
+
+.pageLabel > .labelFrame
+{
+    -webkit-transition: border 0.3s linear, box-shadow 0.3s linear;
+    -moz-transition: border 0.3s linear, box-shadow 0.3s linear;
+    -ms-transition: border 0.3s linear, box-shadow 0.3s linear;
+    -o-transition: border 0.3s linear, box-shadow 0.3s linear;
+    transition:  box-shadow 0.3s ease-in-out;
+}
+
+
+.pageLabel:hover > .labelFrame,
+.pageLabel.activeLabel > .labelFrame
+{
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border: 1px solid #FFF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    top: -10%;
+    left: -10%;
+    -webkit-box-shadow: 0 0 10px #fff;
+    -moz-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+.pageLabel > .layer
+{
+    left: 3px;
+}
+
+.closePageBtn > .btnLayer
+{
+    background-color: #ff3a5d !important;
+}
+
+.pageBtn > .btnLayer
+{
+    z-index: 600;
+}
+
+.pageBtn > .btnLayer > .btnLayer
+{
+    top: 4px;
+    left: 4px;
+    z-index: 650;
+}
+
+.closePageBtn > .btnLayer > .btnLayer
+{
+    background-color: #ff5e7b !important;
+}
+
+.faroBtn
+{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.closeSignRight, .closeSignLeft
+{
+    position: absolute;
+    top: 27px;
+    left: 16px;
+    width: 40%;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.closeSignLeft
+{
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.closeSignRight
+{
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.backPageBtn
+{
+    background-color: #0099fb;
+    top: -20px;
+    right: 50px;
+}
+
+
+.backPageBtn > .btnLayer
+{
+    background-color: #3ab1ff !important;
+}
+
+.backPageBtn > .btnLayer > .btnLayer
+{
+    background-color: #5ec0ff !important;
+}
+
+.pageBtn > .btnLayer,
+.planetLabel > .layer,
+.planetInnerLabel > .layer
+{
+    width: 90%;
+    height:90%;
+}
+
+.pageBtn > .btnLayer > .btnLayer
+{
+    left: 2px;
+    top: 5px;
+}
+
+.planetLabel > .layer > .layer,
+.planetInnerLabel > .layer > .layer
+{
+    left: 7px;
+    top: 5px;
+}
+
+.pageLabel .labelText
+{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+
+.planetInnerLabel .labelText
+{
+    left: 20%;
+}
+
+
+.pageLabel .labelText h2
+{
+    font-family: "Lalezar-Regular", Tahoma;
+    font-size: 36px;
+    color: #f6ff00;
+}
+
+.pageLabel .labelText a
+{
+    font-family: "Lalezar-Regular", Tahoma;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.activeLabel a
+{
+    pointer-events: none;
+}
+
+
+.planetLabel > .layer > .layer > .layer
+{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    right: 25px;
+    top: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 10px #fff;
+    -moz-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+
+.circularTriangle
+{
+    position: absolute;
+    left: 30%;
+    width: 35%;
+    height: 35%;
+    background-color: #c8c8c8;
+    top: 30%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(35deg);
+    -webkit-border-radius: 30% 100% 30% 20%;
+    -moz-border-radius: 30% 100% 30% 20%;
+    border-radius: 30% 100% 30% 20%;
+}
+
+.circularTriangle > .circularTriangle
+{
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background-color: #fff;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(0deg);
+}
+
+.contentContainerLayer > .swiper-container
+{
+    position: relative;
+    height: 100%;
+    z-index: 700;
+}
+
+.videoSlider .swiper-slide iframe
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.nextBtn
+{
+    position: absolute;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+
+    cursor: pointer;
+    -webkit-transition: top 0.3s linear, right 0.3s linear;
+    -moz-transition: top 0.3s linear, right 0.3s linear;
+    -ms-transition: top 0.3s linear, right 0.3s linear;
+    -o-transition: top 0.3s linear, right 0.3s linear;
+    transition: top 0.3s linear, right 0.3s linear;
+}
+
+.nextBtnMain
+{
+    top: 30%;
+    right: -15%;
+}
+
+.nextBtnMain:hover
+{
+    top: 31%;
+    right: -16%;
+}
+
+.prevBtn
+{
+    position: absolute;
+
+    cursor: pointer;
+    -webkit-transition: top 0.3s linear, right 0.3s linear;
+    -moz-transition: top 0.3s linear, right 0.3s linear;
+    -ms-transition: top 0.3s linear, right 0.3s linear;
+    -o-transition: top 0.3s linear, right 0.3s linear;
+    transition: top 0.3s linear, right 0.3s linear;
+}
+
+.prevBtnMain
+{
+    top: 30%;
+    left: -15%;
+}
+
+.prevBtnMain:hover
+{
+    top: 31%;
+    left: -16%;
+}
+
+.thumbsContainer
+{
+    position: relative;
+    top: 19%;
+    margin: 0 auto;
+    width: 60%;
+    height: 20%;
+    opacity: 0.3;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -ms-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+
+.thumbsContainer:hover
+{
+    opacity: 1;
+}
+
+.gallery-thumbs
+{
+    position: relative;
+    margin: 25px auto;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 3px;
+}
+
+
+.gallery-thumbs .swiper-slide
+{
+    height: 100%;
+    opacity: 0.4;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gallery-thumbs .swiper-slide-active
+{
+    opacity: 1;
+}
+
+.gallery-thumbs .swiper-slide:first-child
+{
+    margin-left: -14%;
+}
+
+.gallery-thumbs .swiper-slide img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.nextBtnThumb,.prevBtnThumb
+{
+    width: 40px;
+    height: 40px;
+}
+.nextBtnThumb
+{
+    top: 25%;
+    right: -17%;
+}
+
+.prevBtnThumb
+{
+    top: 25%;
+    left: -14%;
+}
+
+
+.nextBtnThumb:hover
+{
+    top: 21%;
+    right: -17%;
+}
+
+.prevBtnThumb:hover
+{
+    top: 21%;
+    left: -15%;
+}
+
+
+/******************************************************** Radio Player ***************************************************/
+
+.radioContainer
+{
+    direction: rtl;
+}
+
+.mCSB_inside > .mCSB_container
+{
+    margin-right: 0;
+}
+
+.radioContainer .mCSB_scrollTools,
+.galleryContainer .mCSB_scrollTools,
+.articlesContainer .mCSB_scrollTools
+{
+    left: 2% !important;
+    height: 50%;
+    top: 25%;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail
+{
+    width: 3px;
+}
+.radioList
+{
+    position: relative;
+    right: 5%;
+    padding: 5px 0;
+    width: 90%;
+    float: right;
+
+}
+
+.radioListItem,
+.radioListItem iframe
+{
+    width: 100%;
+    height: 100px;
+}
+
+.radioListItem
+{
+    margin-top: 10px;
+}
+
+/******************************************************** Gallery ***************************************************/
+
+.galleryList, .articlesList
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.galleryItem
+{
+    position: relative;
+    margin: 5px 0;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.galleryItem a
+{
+    display: block;
+}
+
+.galleryItem img
+{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+.fancybox-caption
+{
+    font-family: "Lalezar-Regular", Tahoma;
+    font-size: 24px;
+    direction: rtl;
+}
+
+.photoViewer
+{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 90%;
+    height: 91%;
+    z-index: 600;
+}
+
+.photoViewer .closeViewer
+{
+    display: block;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+.photoViewer img
+{
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+
+}
+
+.backToGalleryBtn
+{
+    display: none;
+    top: 30%;
+    right: -5%;
+}
+
+.backToGalleryBtn a
+{
+    font-size: 28px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+}
+
+
+/*************************************************** Articles' List Page ****************************************************/
+
+.articlesContainer,
+.articlesDetailsContainer
+{
+    padding: 0 10px;
+}
+
+.articlesList
+{
+    width: 92%;
+}
+
+.articleListItem
+{
+    margin-top: 10px;
+    border: solid 1px transparent;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -ms-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.articleListItem:hover
+{
+    background-color: #ebebeb;
+    border: solid 1px #ddd;
+}
+
+.articleItemPic
+{
+    padding: 0 0 0 5px;
+}
+
+.articleItemPic a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.articleItemPic img
+{
+    width: 100%;
+    float: right;
+}
+
+.articleItemText
+{
+    padding: 0 5px;
+}
+
+.articleListItemTitle,
+.articleListItemDescription
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+.articleListItemTitle
+{
+    max-height: 45px;
+}
+
+.articleListItemDescription
+{
+    max-height: 105px;
+    overflow: hidden;
+}
+
+.articleListItemTitle h3
+{
+    margin: 0 0 10px 0;
+}
+
+.articleListItemTitle h3 a
+{
+    font-family: "Lalezar-Regular", Tahoma;
+    font-size: 24px;
+    color: #0069ac;
+    text-decoration: none;
+    margin: 10px 0;
+    line-height: 40px;
+}
+.articleListItemDescription span
+{
+    font-family: "Lalezar-Regular", Tahoma;
+    font-size: 18px;
+    color: #000;
+    margin: 5px 0;
+    line-height: 27px;
+}
+
+
+/**************************************************** Article Details ************************************************/
+
+.articlesDetailsContainer
+{
+    position: relative;
+}
+
+
+.articleContent
+{
+    height: 380px;
+    z-index: 600;
+    padding: 10px 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.relatedArticles
+{
+    z-index: 600;
+    height: 380px;
+    padding: 10px 5px;
+    overflow: hidden;
+}
+
+.relatedArticles .mCSB_container > span
+{
+    font-family:"Lalezar-Regular", Tahoma;
+    font-size: 24px;
+    display: block;
+    text-align: center;;
+    color: #39b1ff;
+
+}
+
+.articleContent > div,
+.relatedArticles > div
+{
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.relatedArticles > div
+{
+    padding: 0 0 0 12px;
+}
+
+.articleContent > div
+{
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+.articlesDetailsContainer .mCSB_scrollTools
+{
+    left: -1% !important;
+    height: 50%;
+    top: 25%;
+}
+
+.articleContent p,
+.articleContent span,
+.articleContent div,
+.articleContent h1
+{
+    font-family:"Lalezar-Regular", Tahoma;
+    font-size: 20px;
+}
+
+.articleContent span
+{
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+.articlePic
+{
+    display: block;
+    clear: both;
+    margin: 0 auto;
+}
+
+.articleContent h1
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: #39b1ff;
+}
+
+.relatedArticlesListItem
+{
+    margin: 10px 0;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 2px transparent;
+    background-color: #ebebeb;
+    -webkit-transition: border-color 0.3s linear;
+    -moz-transition: border-color 0.3s linear;
+    -ms-transition: border-color 0.3s linear;
+    -o-transition: border-color 0.3s linear;
+    transition: border-color 0.3s linear;
+    overflow: hidden;
+}
+
+.relatedArticlesListItem:first-child
+{
+    margin-top: 0;
+}
+
+.relatedArticlesListItem:last-child
+{
+    margin-bottom: 0;
+}
+
+.relatedArticlesListItem:hover
+{
+    border: solid 2px #ccc;
+}
+
+.relatedArticlesListItem h3
+{
+    text-align: center;
+    margin: 0;
+    line-height: 22px;
+    max-height: 45px;
+}
+
+.relatedArticlesListItem h3 a
+{
+    font-family: "Lalezar-Regular", Tahoma;
+    font-size:  16px;
+    word-wrap: break-word;
+    color: #555;
+    line-height: 5px;
+    text-decoration: none;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    -ms-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+.relatedArticlesListItem h3 a:hover
+{
+    color: #2b7baf;
+}

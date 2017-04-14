@@ -1,0 +1,77 @@
+/* Services' Theme */
+
+.mainBackground
+{
+    background: #f55c74; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f55c74, #f56ee3); /* Safari */
+    background: -o-linear-gradient(#f55c74, #f56ee3); /* Opera */
+    background: -moz-linear-gradient(#f55c74, #f56ee3); /* Firefox */
+    background: linear-gradient(#f55c74, #f56ee3); /* Standard */
+}
+
+.pageLabel,
+.nextBtn,
+.prevBtn
+{
+    background-color: #da21c3;
+}
+
+.planetLabel
+{
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.planetLabel > .layer
+{
+    top: 5px;
+    left: 5px;
+    height: 85%;
+    background-color: #f330da;
+    -webkit-border-radius: 58px 58px 50px 50px;
+    -moz-border-radius: 58px 58px 50px 50px;
+    border-radius: 58px 58px 50px 50px;
+}
+
+.pageBtn > .btnLayer,
+.planetInnerLabel > .layer
+{
+    background-color: #f330da;
+}
+
+.planetLabel > .layer > .layer
+{
+    height: 75%;
+    background-color: #fd58e8;
+    -webkit-border-radius: 58px 58px 50px 50px;
+    -moz-border-radius: 58px 58px 50px 50px;
+    border-radius: 58px 58px 50px 50px;
+}
+
+.planetInnerLabel > .layer > .layer,
+.pageBtn > .btnLayer > .btnLayer
+{
+    background-color: #fd58e8;
+}
+
+.planetLabel .labelText
+{
+    top: 0;
+    left: 6%;
+}
+
+.planetLabel > .layer > .layer > .layer
+{
+    display: none;
+}
+
+.planetInnerLabel:nth-child(3)
+{
+    display: none;
+}
+
+.socials > ul > li a:hover
+{
+    color: #da21c3;
+}

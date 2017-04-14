@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Faro Land</title>
+    <link rel="stylesheet" href="style/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="style/swiper.min.css">
+    <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/storiesTheme.css">
+    <script src="script/jquery-3.2.0.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/swiper.jquery.min.js"></script>
+    <script src="script/jquery.mCustomScrollbar.min.js"></script>
+</head>
+<body>
+    <!-- Search Button-->
+    <div class="searchBtn">
+        <a href="#">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+
+    <div class="searchInputContainer animated">
+        <form>
+            <input type="text" name="searchInput" placeholder="ابحث هنا">
+
+            <input class="searchSubmit" type="submit" value="ابحث">
+        </form>
+    </div>
+
+    <!-- Main Menu Button-->
+    <div class="menuBtn">
+        <a href="#">
+            <img class="img-responsive" src="img/menu-bar.png" alt="Navigation Menu" title="Navigation Menu">
+        </a>
+    </div>
+
+    <div class="menu animated" id="menu">
+        <div class="menuItem animated menuServices">
+            <a href="" class="menuMainLink">
+                خدمات
+            </a>
+
+            <div class="menuInner animated">
+                <ul>
+                    <li class="animated">
+                        <a href="">من أم لأم</a>
+                    </li>
+
+                    <li class="animated">
+                        <a href="">دليل خبرويتر</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="menuItem animated menuStories">
+            <a href="" class="menuMainLink">
+                حواديت
+            </a>
+
+            <div class="menuInner animated">
+                <ul>
+                    <li class="animated">
+                        <a href="">كومكس</a>
+                    </li>
+
+                    <li class="animated">
+                        <a href="">فيديو</a>
+                    </li>
+
+                    <li class="animated">
+                        <a href="">راديو</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menuItem animated menuKhabar">
+            <a href="" class="menuMainLink">
+                خبرويتر
+            </a>
+
+            <div class="menuInner animated">
+                <ul>
+                    <li class="animated">
+                        <a href="">أخبارنا</a>
+                    </li>
+
+                    <li class="animated">
+                        <a href="">خبرويتر</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menuItem animated menuPreschool">
+            <a href="" class="menuMainLink">
+                قبل المدرسة
+            </a>
+
+            <div class="menuInner animated">
+                <ul>
+                    <li class="animated">
+                        <a href="">المزرعة</a>
+                    </li>
+
+                    <li class="animated">
+                        <a href="">إرسم ولون</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="menuItem animated menuKnowledge">
+            <a href="" class="menuMainLink">
+                معرفة
+            </a>
+
+            <div class="menuInner animated">
+                <ul>
+                    <li class="animated">
+                        <a href="">إعرف</a>
+                    </li>
+
+                    <li class="animated">
+                        <a href="">علم نفسك</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Components Container -->
+    <div class="mainContainer ">
+
+        <!-- Sound Mute Button-->
+        <div class="mute">
+            <a href="#">
+                <i class="fa fa-microphone"></i>
+            </a>
+
+            <audio class="backgroundMusic" >
+                <source src="music/music.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="innerLogo animated tada">
+            <a href="#">
+                <img src="img/logo-sm.png" alt="" class="img-responsive">
+            </a>
+        </div>
+
+        <!-- Down Left Social Links -->
+        <div class="socials">
+            <ul>
+                <li>
+                    <a href="#" rel="nofollow" target="_blank">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" rel="nofollow" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" rel="nofollow" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Background Container -->
+    <div class="mainBackground">
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="pageContent">
+        <div class="labelMenu">
+            <div class="pageLabel planetInnerLabel activeLabel">
+                <div class="labelFrame"></div>
+                <div class="layer">
+                    <div class="layer">
+                        <div class="labelText">
+                            <a class="activeLabelLink" href="#">
+                                    خبرويتر
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pageLabel planetInnerLabel">
+                <div class="labelFrame"></div>
+                <div class="layer">
+                    <div class="layer">
+                        <div class="labelText">
+                            <a href="#">
+أخبارنا
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pageLabel planetInnerLabel">
+                <div class="labelFrame"></div>
+                <div class="layer">
+                    <div class="layer">
+                        <div class="labelText">
+                            <a href="#">
+أخبارنا
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pageLabel planetLabel activeLabel">
+                <div class="labelFrame"></div>
+
+                <div class="layer">
+                    <div class="layer">
+                        <div class="labelText">
+                            <h2>خبرويتر</h2>
+                        </div>
+
+                        <div class="layer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Container -->
+        <div class="pageContainer">
+
+            <!-- Close Button 'toggles the main menu' -->
+            <div class="pageBtn closePageBtn">
+                <a href="#" class="faroBtn closeBtn">
+                    <div class="closeSignLeft"></div>
+                    <div class="closeSignRight"></div>
+                </a>
+
+                <div class="btnLayer">
+                    <div class="btnLayer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button 'Navigates backwards' -->
+            <div class="pageBtn backPageBtn">
+                <a href="#" class="faroBtn backBtn" id="goBackBtn">
+                   <div class="circularTriangle">
+                       <div class="circularTriangle">
+
+                       </div>
+                   </div>
+                </a>
+
+                <div class="btnLayer">
+                    <div class="btnLayer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Photo Gallery Button -->
+            <div class="pageBtn backPageBtn backToGalleryBtn animated">
+                <a href="#" class="faroBtn backBtn" id="toGallery">
+                    <i class="fa fa-th-list"></i>
+                </a>
+
+                <div class="btnLayer">
+                    <div class="btnLayer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Content -->
+            <div class="pageContainerLayer">
+                <div class="pageContainerLayer">
+                    <div class="contentContainerLayer articlesDetailsContainer row">
+                        <div class="col-lg-8 pull-right articleContent" dir="rtl">
+                            <div>
+                                <img src="img/articleImg.png" alt="Article Picture" title="Article Picture" class="articlePic img-responsive">
+
+                                <h1>
+                                    عنوان
+
+                                </h1>
+
+                                <span>
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                          ويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                          ويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                          ويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                          ويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                          ويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 pull-right relatedArticles" dir="rtl">
+                            <div>
+                                <span>
+                               أخبارنا
+                                </span>
+
+                                <div class="row relatedArticlesListItem">
+                                    <a href="">
+                                        <img src="img/articleImg.png" alt="Article Picture" title="Article Picture" class="img-responsive">
+                                    </a>
+
+                                    <h3>
+                                        <a href="">
+                                            خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                        </a>
+                                    </h3>
+                                </div>
+
+                                <div class="row relatedArticlesListItem">
+                                    <a href="">
+                                        <img src="img/articleImg.png" alt="Article Picture" title="Article Picture" class="img-responsive">
+                                    </a>
+
+                                    <h3>
+                                        <a href="">
+                                            خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="row relatedArticlesListItem">
+                                    <a href="">
+                                        <img src="img/articleImg.png" alt="Article Picture" title="Article Picture" class="img-responsive">
+                                    </a>
+
+                                    <h3>
+                                        <a href="">
+                                            خبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويترخبرويتر
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
